@@ -1,0 +1,24 @@
+# 1- YAML file commonly starts with three dashes --- and ends with three dots ... to indicate the start and end
+# of YAML file, allows to have a multiple sets of YAML data within the same file (this --- and ... are completely optional
+# and are'nt always used).
+# 2- YAML have Key-value paires method and support somplex data types
+---
+name: 'Samer Aboualaenaen' #string.. it is interpreted as string with and with out qoutations 
+# also single qoute can work, the only thing you must to " " when you have an integer 
+# and you want to set it as string
+age: 20 #integer
+Birth: "2004" #string
+isGraduate: false #boolean
+id: 22.88 #float
+specialzation: #dictionary
+  #each dash indicates a new item in the list 
+  - Information technology engineeing #element
+  - General mechanics engineering #element
+socialMediaLinks: #dictionary
+  Youtube: #element
+    link: https://www.Youtube.com #attribute
+    videos: 2 #attribute
+  LinkedIn: #element
+    link: https://www.LinkedIn.com #attribute
+    Posts: 6  #attribute
+...

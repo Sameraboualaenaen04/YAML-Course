@@ -1,0 +1,36 @@
+---
+version: '3'
+services:
+  web:
+    build: .
+    ports:
+      - "5000:5000"
+    depends_on:
+      - db
+    environment:
+      - DATABASE_URL=postgres://user:password@db:5432/database
+    restart: always
+
+  db:
+    image: postgres
+    environment:
+      - POSTGRES_USER=user
+      - POSTGRES_PASSWORD=password
+      - POSTGRES_DB=database
+    volumes:
+      - db-data:/var/lib/postgresql/data
+    restart: always
+
+volumes:
+  db-data:
+
+#version: Specifies the version of the Docker Compose file format.
+#services: Defines the services that make up the application.
+#web and db: These are the two services defined in this example.
+#build: Specifies the directory where the Dockerfile is located for the web service.
+#ports: Maps a port on the host machine to a port in the container.
+#depends_on: Specifies the services that a service depends on.
+#environment: Sets environment variables for the services.
+#restart: Specifies the restart policy for the services.
+#image: Specifies the Docker image to use for the db service.
+#volumes: Mounts a volume to persist data in the db service.

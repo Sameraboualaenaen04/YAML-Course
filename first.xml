@@ -1,0 +1,18 @@
+<!-- converted code from yaml -->
+<name>Samer Aboualaenaen</name>
+<age>20</age>
+<Birth>2004</Birth>
+<isGraduate>false</isGraduate>
+<id>22.88</id>
+<specialzation>Information technology engineeing</specialzation>
+<specialzation>General mechanics engineering</specialzation>
+<socialMediaLinks>
+  <Youtube>
+    <link>https://www.Youtube.com</link>
+    <videos>2</videos>
+  </Youtube>
+  <LinkedIn>
+    <link>https://www.LinkedIn.com</link>
+    <Posts>6</Posts>
+  </LinkedIn>
+</socialMediaLinks>
